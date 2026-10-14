@@ -1,4 +1,10 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <style>
   .request-button{
     background-color: black;
     color:white;
@@ -8,6 +14,13 @@
     font-size:x-small;
     cursor:pointer;
   }
+  .request-button:hover{
+    opacity: 0.8;
+  }
+  .request-button:active{
+    opacity: 0.5;
+  }
+
   .add-to-cart-button{
     background-color:rgb(255, 216, 20);
     color:black;
@@ -17,8 +30,11 @@
     border-radius:30px;
     margin-left:16px;
     cursor:pointer;
-    
   }
+  .add-to-cart-button:hover{
+    background-color:rgb(246,200, 38);
+  }
+
   .sign-up-button{
     background-color:rgb(46, 164, 79);
     color:white;
@@ -32,8 +48,12 @@
     margin-left:8px;
     cursor:pointer;
   }
+.sign-up-button:hover{
+  box-shadow:2px 3px 10px rgba(0, 0, 0, 0.10)
+}
+
   .get-started{
-    background-color:rgb(121, 82, 179);
+    background-color:rgb(129, 82, 179);
     color:white;
     border:none;
     height:36px;
@@ -43,8 +63,12 @@
     border-radius:6px;
     margin-left:8px;
     cursor: pointer;
-    
+    transition: backsground-color 0.15s;
   }
+.get-started:hover{
+  background-color:rgba(112, 50, 160, 0.995);
+}
+
   .download-button{
     background-color:white;
     color:rgb(108, 117, 125);
@@ -56,8 +80,15 @@
     border-style:solid;
     border-width:1px;
     margin-right:8px;
-    cursor:pointer;    
+    cursor:pointer; 
+    transition:background-color o.15s,
+    color 0.15s;  
   }
+.download-button:hover{
+  background-color:rgb(108, 117, 125);
+  color:white;
+}
+
   .linkedin-button{
     background-color: rgb(10, 102, 194);
     color:white;
@@ -70,6 +101,11 @@
     border-width:0px;
     margin-left:8px;
     cursor:pointer;
+    transition:background-color 0.15s;
+  }
+
+  .linkedin-button:hover{
+    background-color:rgba(20, 40, 110, 0.948)
   }
   .save-button{
   background-color:white;
@@ -83,10 +119,14 @@
   border-width:1px;
   margin-left:8px;
   cursor:pointer;
-  border-color:rgb(10, 102, 194);
+  border-color:rgb(10, 102, 194) 
   }
-
+  .save-button:hover{
+    background-color:rgba(120, 200, 200, 0.231) 
+  }
 </style>
+</head>
+<body>
 
 <button class="request-button">
   Request now
@@ -108,3 +148,6 @@
   <button class="save-button">
     Save
   </button>
+
+</body>
+</html>
